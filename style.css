@@ -66,9 +66,43 @@ body{
 .logo1  :hover{
     color: red;
 }
-@media  screen and (min-width:780px) {
-    body{
-       width:100%;
-        hieght:100%;
-    }
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column; /* Stack the sections on top of each other */
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .main-text {
+    max-width: 100%;  /* Let the text take up the full width on smaller screens */
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem; /* Make the header text smaller */
+  }
+
+  /* Adjust buttons to take full width on mobile */
+  a, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Media Query for Very Small Screens (Portrait mobile) */
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 1rem; /* Make text size smaller for very small screens */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Adjust header size */
+  }
 }
