@@ -6,6 +6,7 @@ body{
     display: flex;
     justify-content: center;
     height: 100vh;
+    width:100%;
     align-items: center;
 }
 .containner{
@@ -67,6 +68,7 @@ body{
 }
 @media  screen and (min-width:780px) {
     body{
-       
+       width:100%;
+        hieght:100%;
     }
 }
